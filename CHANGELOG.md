@@ -1,3 +1,11 @@
+<a name="v0.2.2"></a>
+### v0.2.2 (2013-10-28)
+
+
+#### Bug Fixes
+
+* **build:** ignore additional files ([0e58ae4b](http://github.com/aspera/mock-cookie/commit/0e58ae4bad7ac883dd2ca2b376eab9302eba4761))
+
 <a name="v0.2.1"></a>
 ### v0.2.1 (2013-10-28)
 
