@@ -4,6 +4,14 @@ A mocked version of the "standard" cookie used in browsers. It doesn't include o
 
 The primary purpose of its creation was for unit tests. Having to clear out cookies for unit tests was tedious and not always reliable/accurate. Sometimes in some tests, document.cookie wasn't even available. This mock version helps ensure clean, consistent results.
 
+## Installation
+
+The best way is to use bower to manage the process:
+
+```bash
+bower install --save-dev mock-cookie
+```
+
 ## Usage
 
 Assign a new version of the cookie to the object you want to represent it, usually document.
@@ -25,7 +33,7 @@ From there, use document.cookie as you normally would to test your application.
 <script>
   myDoc = new window.Document();
   myDoc.cookie = 'value to add';
-</scipt>
+</script>
 ```
 
 By using myDoc.cookie instead of document.cookie in your application, you can keep the original functionality to test against. If you really want to override document.cookie for some reason:
@@ -35,7 +43,7 @@ By using myDoc.cookie instead of document.cookie in your application, you can ke
 <script>
   document.cookie = (new window.Document()).cookie;
   document.cookie = 'value to add';
-</scipt>
+</script>
 ```
 
 ## Future Plans
