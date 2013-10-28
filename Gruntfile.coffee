@@ -17,8 +17,8 @@ module.exports = (grunt) ->
     concat:
       all:
         src: [
-          'src/<%= bower.name %>.prefix',
-          '.tmp/<%= bower.name %>.js',
+          'src/<%= bower.name %>.prefix'
+          '.tmp/<%= bower.name %>.js'
           'src/<%= bower.name %>.suffix'
         ],
         dest: 'dist/<%= bower.name %>.js'
@@ -45,11 +45,12 @@ module.exports = (grunt) ->
 
 
   grunt.registerTask 'default', [
-    'clean:dist'
+    'clean'
     'coffee'
     'concat'
-    'jshint:dist'
+    'jshint'
     'uglify'
+    'clean:tmp'
   ]
 
   grunt.registerTask 'release', (target) ->
