@@ -2,7 +2,7 @@
   "author": "mock-cookie",
   "description": "A mocked version of document.cookie",
   "name": "mock-cookie",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "./dist/mock-cookie.js",
   "homepage": "http://github.com/aspera/mock-cookie",
   "repository": {
