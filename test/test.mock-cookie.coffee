@@ -1,4 +1,4 @@
-mock = require('../src/mock-cookie.coffee').MockDoc
+window = require('../src/mock-cookie.coffee').Document
 assert = require 'assert'
 
 describe 'mock-cookie', ->
@@ -9,7 +9,7 @@ describe 'mock-cookie', ->
     prop: 'prop=erty'
 
   beforeEach ->
-    document = new mock()
+    document = new window()
 
   describe '#get()', ->
     it 'should get a cookie value', ->

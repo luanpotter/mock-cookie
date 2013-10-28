@@ -1,7 +1,8 @@
-(function(window, undefined) {
+var exports = exports || window;
+(function(exports) {
 
 
-var Document, root;
+var Document;
 
 if (!String.prototype.trim) {
   String.prototype.trim = function() {
@@ -69,8 +70,6 @@ Document = (function() {
 
 })();
 
-root = typeof exports !== "undefined" && exports !== null ? exports : window;
+exports.Document = Document;
 
-root.MockDoc = Document;
-
-})(window);
+})(exports);

@@ -6,13 +6,37 @@ The primary purpose of its creation was for unit tests. Having to clear out cook
 
 ## Usage
 
-Assign a new version of the cookie to the object you want to represent it, usually document:
+Assign a new version of the cookie to the object you want to represent it, usually document.
+
+### In unit tests:
 
 ```javascript
-document.cookie = (new Document()).cookie
+window = require('path/to/mock-cookie.js').Document;
+document = new window();
+document.cookie = 'value to add';
 ```
 
 From there, use document.cookie as you normally would to test your application.
+
+
+### In code:
+```javascript
+<script src='path/to/mock-cookie.js'></script>
+<script>
+  myDoc = new window.Document();
+  myDoc.cookie = 'value to add';
+</scipt>
+```
+
+By using myDoc.cookie instead of document.cookie in your application, you can keep the original functionality to test against. If you really want to override document.cookie for some reason:
+
+```javascript
+<script src='path/to/mock-cookie.js'></script>
+<script>
+  document.cookie = (new window.Document()).cookie;
+  document.cookie = 'value to add';
+</scipt>
+```
 
 ## Future Plans
 

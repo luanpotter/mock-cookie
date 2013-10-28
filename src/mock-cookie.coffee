@@ -43,5 +43,4 @@ class Document
       return cookie
 
 
-root = exports ? window
-root.MockDoc = Document
+exports.Document = Document

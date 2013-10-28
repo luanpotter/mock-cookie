@@ -34,6 +34,13 @@ module.exports = (grunt) ->
           globalstrict: false
           eqnull: true
         src: ['<%= concat.all.dest %>']
+    bump:
+      options:
+        files: [
+          'package.json'
+          'bower.json'
+        ]
+        pushTo: 'origin'
 
 
   grunt.registerTask 'default', [
