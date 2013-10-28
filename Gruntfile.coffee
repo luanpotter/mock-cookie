@@ -51,3 +51,11 @@ module.exports = (grunt) ->
     'jshint:dist'
     'uglify'
   ]
+
+  grunt.registerTask 'release', (target) ->
+    if target in [ 'patch', 'minor', 'major', 'git' ]
+      grunt.task.run [
+        "bump-only:#{target}"
+        'changelog'
+        'bump-commit'
+      ]
