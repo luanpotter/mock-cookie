@@ -14,8 +14,10 @@
   "ignore": [
     "src",
     "test",
-    "Gruntfile.js",
+    "Gruntfile.*",
     "**/.*",
+    "travis.yml",
+    "package.json",
     "node_modules",
     "bower_components"
   ],
