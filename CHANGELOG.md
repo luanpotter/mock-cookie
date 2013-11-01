@@ -1,3 +1,11 @@
+<a name="v0.2.3"></a>
+### v0.2.3 (2013-11-01)
+
+
+#### Bug Fixes
+
+* **tests:** add coffeescript support to tests ([0430fdeb](http://github.com/aspera/mock-cookie/commit/0430fdeb637e089b87df5efb924f26479295ba90))
+
 <a name="v0.2.2"></a>
 ### v0.2.2 (2013-10-28)
 

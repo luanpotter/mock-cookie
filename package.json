@@ -1,6 +1,6 @@
 {
   "name": "mock-cookie",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "repository": {
     "type": "git",
     "url": "git://github.com/aspera/mock-cookie.git"
