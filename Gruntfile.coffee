@@ -57,6 +57,7 @@ module.exports = (grunt) ->
     if target in [ 'patch', 'minor', 'major', 'git' ]
       grunt.task.run [
         "bump-only:#{target}"
+        'default'
         'changelog'
         'bump-commit'
       ]
