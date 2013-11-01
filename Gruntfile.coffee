@@ -15,6 +15,8 @@ module.exports = (grunt) ->
       all:
         files: '.tmp/<%= bower.name %>.js': 'src/<%= bower.name %>.coffee'
     concat:
+      options:
+        banner: '/*! <%= bower.name %> v<%= bower.version %> | (c) <%= grunt.template.today("yyyy") %> Aspera, Inc. | MIT License */\n'
       all:
         src: [
           'src/<%= bower.name %>.prefix'
@@ -24,7 +26,7 @@ module.exports = (grunt) ->
         dest: 'dist/<%= bower.name %>.js'
     uglify:
       options:
-        banner: '/*! <%= bower.name %> v<%= bower.version %> | (c) <%= grunt.template.today("yyyy") %> Aspera, Inc. | MIT License */\n'
+        banner: '<%= concat.options.banner %>'
         report: 'gzip'
       all:
         files: 'dist/<%= bower.name %>.min.js': ['<%= concat.all.dest %>']
