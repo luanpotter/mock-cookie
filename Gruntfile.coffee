@@ -44,6 +44,7 @@ module.exports = (grunt) ->
         ]
         updateConfigs: ['bower']
         commitFiles: ['-a']
+        commitMessage: 'chore(release): release v%VERSION%'
         pushTo: 'origin'
 
 
