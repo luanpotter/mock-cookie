@@ -42,6 +42,7 @@ module.exports = (grunt) ->
           'package.json'
           'bower.json'
         ]
+        updateConfigs: ['bower']
         commitFiles: ['-a']
         pushTo: 'origin'
 
