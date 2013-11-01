@@ -1,11 +1,4 @@
-/*!
- * mock-cookie
- *
- * Copyright 2013 Aspera, Inc. and other contributors
- * Released under the MIT license
- * https://raw.github.com/Aspera/mock-cookie/master/LICENSE
- *
- */
+/*! mock-cookie v0.2.4 | (c) 2013 Aspera, Inc. | MIT License */
 var exports = exports || window;
 (function(exports) {
 

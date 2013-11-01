@@ -1,3 +1,13 @@
+<a name="v0.2.4"></a>
+### v0.2.4 (2013-11-01)
+
+
+#### Bug Fixes
+
+* **build:**
+  * update commit message for release ([fba752ba](http://github.com/aspera/mock-cookie/commit/fba752ba7cd7df14b98cdbbe1d5eedc111c30ab0))
+  * update configs ([8dfd9dd1](http://github.com/aspera/mock-cookie/commit/8dfd9dd1aa771c9cdfae37523225424232e4c85c))
+
 <a name="v0.2.3"></a>
 ### v0.2.3 (2013-11-01)
 
