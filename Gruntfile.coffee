@@ -24,7 +24,7 @@ module.exports = (grunt) ->
         dest: 'dist/<%= bower.name %>.js'
     uglify:
       options:
-        banner: '/*! <%= bower.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
+        banner: '/*! <%= bower.name %> v<%= bower.version %> | (c) <%= grunt.template.today("yyyy") %> Aspera, Inc. | MIT License */\n'
         report: 'gzip'
       all:
         files: 'dist/<%= bower.name %>.min.js': ['<%= concat.all.dest %>']
