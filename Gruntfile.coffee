@@ -6,14 +6,15 @@ module.exports = (grunt) ->
     # Module options as specified in bower.json file
     bower: grunt.file.readJSON 'bower.json'
 
-    # Remove the old built files before making new ones
     clean:
       dist: ['dist']
       tmp: ['.tmp']
     coffee:
-      options: bare: true
+      options:
+        bare: true
       all:
-        files: '.tmp/<%= bower.name %>.js': 'src/<%= bower.name %>.coffee'
+        files:
+          '.tmp/<%= bower.name %>.js': 'src/<%= bower.name %>.coffee'
     concat:
       options:
         banner: '/*! <%= bower.name %> v<%= bower.version %> | (c) <%= grunt.template.today("yyyy") %> Aspera, Inc. | MIT License */\n'
@@ -22,14 +23,15 @@ module.exports = (grunt) ->
           'src/<%= bower.name %>.prefix'
           '.tmp/<%= bower.name %>.js'
           'src/<%= bower.name %>.suffix'
-        ],
+        ]
         dest: 'dist/<%= bower.name %>.js'
     uglify:
       options:
         banner: '<%= concat.options.banner %>'
         report: 'gzip'
       all:
-        files: 'dist/<%= bower.name %>.min.js': ['<%= concat.all.dest %>']
+        files:
+          'dist/<%= bower.name %>.min.js': ['<%= concat.all.dest %>']
     jshint:
       dist:
         options:

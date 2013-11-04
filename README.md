@@ -1,5 +1,10 @@
 # Mock Cookie
 
+### Status
+| Branch        | Status         |
+| ------------- |:-------------:|
+| master        | [![Build Status](https://travis-ci.org/Aspera/mock-cookie.png?branch=master)](https://travis-ci.org/Aspera/mock-cookie) |
+
 A mocked version of the "standard" cookie used in browsers. It doesn't include options for path, domain, secure or http only at the moment.
 
 The primary purpose of its creation was for unit tests. Having to clear out cookies for unit tests was tedious and not always reliable/accurate. Sometimes in some tests, document.cookie wasn't even available. This mock version helps ensure clean, consistent results.
@@ -53,4 +58,3 @@ By using myDoc.cookie instead of document.cookie in your application, you can ke
 * Domain: Similiar to path but with window.location.{host|hostname|origin}
 * Secure: Similiar to path but with window.location.protocol
 * Http-only: Not sure how to mock this out since JS wouldn't have access to the cookie. That could probably be the test
-
