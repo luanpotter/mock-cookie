@@ -19,9 +19,9 @@ class Document
             continue
 
           key = if key is ' ' then '' else "#{key}="
+          str += '; ' if str isnt '' and key isnt ' '
           str += key + val.value
-          str += '; ' if val.value
-        return str.slice 0, -2
+        return str
       else
         return ''
     set: (val) ->
