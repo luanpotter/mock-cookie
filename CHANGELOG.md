@@ -1,3 +1,13 @@
+<a name="v0.3.0"></a>
+## v0.3.0 (2013-11-05)
+
+
+#### Bug Fixes
+
+* **code:**
+  * get value should return correct value ([2f5d8297](http://github.com/aspera/mock-cookie/commit/2f5d8297b394f5b3362edb8088135275514b4077))
+  * fix return value for set ([913ad40e](http://github.com/aspera/mock-cookie/commit/913ad40e5e42e6c0e972f545bc2c08daa237f9a0))
+
 <a name="v0.2.4"></a>
 ### v0.2.4 (2013-11-01)
 
