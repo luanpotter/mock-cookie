@@ -40,7 +40,7 @@ class Document
         value: value
         expires: expires ? 'Session'
 
-      return cookie
+      return value
 
 
 exports.Document = Document
