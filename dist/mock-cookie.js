@@ -1,4 +1,4 @@
-/*! mock-cookie v0.3.0 | (c) 2013 Aspera, Inc. | MIT License */
+/*! mock-cookie v0.3.1 | (c) 2013 Aspera, Inc. | MIT License */
 var exports = exports || window;
 (function(exports) {
 
@@ -35,12 +35,12 @@ Document = (function() {
             continue;
           }
           key = key === ' ' ? '' : "" + key + "=";
-          str += key + val.value;
-          if (val.value) {
+          if (str !== '' && key !== ' ') {
             str += '; ';
           }
+          str += key + val.value;
         }
-        return str.slice(0, -2);
+        return str;
       } else {
         return '';
       }
