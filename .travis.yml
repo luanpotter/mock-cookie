@@ -8,5 +8,5 @@ install:
   - bower install
 
 script:
-  - npm test
+  - ./node_modules/.bin/mocha -c --compilers coffee:coffee-script test
   - npm run-script build
