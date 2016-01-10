@@ -17,6 +17,12 @@ The best way is to use bower to manage the process:
 bower install --save-dev mock-cookie
 ```
 
+Or you can use npm:
+
+```bash
+npm install --save-dev mock-cookie
+```
+
 ## Usage
 
 Assign a new version of the cookie to the object you want to represent it, usually document.
