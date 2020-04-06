@@ -3,7 +3,7 @@
   "version": "0.3.2",
   "repository": {
     "type": "git",
-    "url": "git://github.com/aspera/mock-cookie.git"
+    "url": "git://github.com/luanpotter/mock-cookie.git"
   },
   "main": "dist/mock-cookie.js",
   "dependencies": {},
